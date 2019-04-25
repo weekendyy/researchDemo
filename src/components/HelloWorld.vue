@@ -29,6 +29,7 @@
     methods : {
       handleBrand({index}){
         this.actIdx = index
+        this.$router.push('/select');
       },
       addBrand(){
         if(!!this.inpVal){
