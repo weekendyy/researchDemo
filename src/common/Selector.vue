@@ -87,6 +87,7 @@
       },
       // 清除所有答案
       _clearRightItem(){
+        this.actAnswer = null
         for(let item of this.rightItemList){
           item.isSelect = false
         }
