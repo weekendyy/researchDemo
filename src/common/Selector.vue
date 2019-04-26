@@ -27,7 +27,7 @@
     </template>
     <!-- 多选 -->
     <template v-if="type === 'multiple'">
-      <div class="leftBox">
+      <div class="leftBox" >
         <div class="moveBox" :style="{transform: moveBoxLength }">
           <div 
             class="leftItem" 
@@ -158,7 +158,28 @@
           let index = this.leftItemList.length-this.currentTopic-1
           this._assign(index)
         },300)
-      }
+      },
+      // 拖动
+      // move(e){
+      //   let odiv = e.target;        //获取目标元素
+
+      //   //算出鼠标相对元素的位置
+      //   let disX = e.clientX - odiv.offsetLeft;
+      //   let disY = e.clientY - odiv.offsetTop;
+      //   document.onmousemove = (e)=>{       //鼠标按下并移动的事件
+      //       //用鼠标的位置减去鼠标相对元素的位置，得到元素的位置
+      //       let left = e.clientX - disX;    
+      //       let top = e.clientY - disY;
+      //       //移动当前元素
+      //       // odiv.style.left = left + 'px';
+      //       odiv.style.top = top + 'px';
+      //       console.log(e)
+      //   };
+      //   document.onmouseup = (e) => {
+      //     document.onmousemove = null;
+      //     document.onmouseup = null;
+      //   };
+      // }
     },
     
     mounted(){

@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div class="container noselect">
     <Selector 
-    type="single"
+    type="multiple"
     :rightItemList="rightItemList"
     :leftItemList="leftItemList" />
   </div>
